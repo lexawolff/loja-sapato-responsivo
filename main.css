@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: rgb(70, 70, 242);
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+ h1 {
+    font-style: italic;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+    
+}
+.menu > li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sobre .conteudo {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    align-items: flex-start;
+    margin-bottom: 50px; 
+}
+
+.conteudo img {
+   max-width: 100%;
+   width: 100%;
+   
+}
+
+.coluna-texto {
+    max-width: 100%;
+    margin-left: 4%;
+   
+}
+
+.coluna-texto h2 {
+    margin-top: 0; 
+    margin-bottom: 40px;
+    border-bottom: 2px solid #100c95;
+    font-style: italic;
+    padding: 10px;
+    color: #100c95;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    margin-top: 0; 
+    margin-bottom: 40px;
+    border-bottom: 2px solid #100c95;
+    font-style: italic;
+    padding: 10px;
+    color: #100c95;
+}
+
+.produto img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #090909;
+    padding: 10px;
+}
+
+.produto button {
+    cursor: pointer;
+    background-color: #100c95;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.produto button:hover {
+    background-color: green
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sobre .conteudo {
+        display: block;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .conteudo img {
+        display: block;
+        margin-right: 0;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .produto {
+        margin-bottom: 20px;
+    }
+}
